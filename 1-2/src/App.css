@@ -1,0 +1,34 @@
+.wrap{
+  margin:50px 0;
+  border:1px solid black;
+}
+
+.memo{
+  font-weight:800;
+  text-align:center;
+  color:red;
+  margin:50px 0;
+}
+
+.box{
+  margin-bottom:50px;
+  border:20px solid beige;
+  &.win{
+    border-color:green;
+  }
+  &.lose{
+    border-color:red;
+  }
+  &.tie{
+    border-color:black;
+  }
+}
+
+.item-img{
+  width:400px;
+}
+
+.main{
+  display:flex;
+  justify-content: center;
+}

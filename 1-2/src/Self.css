@@ -1,0 +1,85 @@
+.wrapper{
+  width:1200px;
+  margin:0 auto;
+  border-top:1px solid #000;
+  h1{
+    font-size:60px;
+    text-align:center;
+    margin:50px 0 20px;
+  }
+  .memo{
+    font-weight:800;
+    text-align:center;
+    color:red;
+    margin-bottom:50px;
+  }
+}
+
+.resultBox{
+  width:100%;
+  height:580px;
+  display:flex;
+  justify-content: space-between;
+  gap:50px;
+  > div[class*="Box"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:20px solid beige;
+    width:50%;
+    padding:40px 0 50px;
+    box-sizing:border-box;
+    h2{
+      font-size:50px;
+      line-height:1;
+    }
+    img{
+      width:300px;
+      height:auto;
+    }
+    p{
+      font-size:30px;
+      text-transform: uppercase;
+    }
+    &.win{
+      border-color:green;
+      p{
+        color:green;
+      }
+    }
+    &.lose{
+      border-color:red;
+      p{
+        color:red;
+      }
+    }
+    &.tie{
+      border-color:black;
+      p{
+        color:black;
+      }
+    }
+  }
+}
+
+.buttonBox{
+  display:flex;
+  justify-content: center;
+  margin-top:50px;
+  > button{
+    width:120px;
+    height:120px;
+    margin:0 10px;
+    font-size:30px;
+    cursor: pointer;
+  }
+}
+
+.scoreBox{
+  font-size:100px;
+  font-weight:800;
+  text-align:center;
+  text-transform: uppercase;
+  margin-top:50px;
+}
