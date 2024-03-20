@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Self.css';
+import '../../styles/Task1_2_Self.css';
 
 // 사용자가 선택하는 버튼의 값
 const BUTTON_ARR = [
@@ -64,7 +64,7 @@ function Self() {
   }, [computersNum, yourNum]);
   
   return (
-    <section className="wrapper">
+    <section className="wrapper_self">
       <h1>가위 바위 보!</h1>
       <p className="memo">💡 강의 듣기 전 미리 만들어 본 코드입니다 💡</p>
       {/* you와 computer의 선택을 보여주는 박스 */}
