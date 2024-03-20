@@ -1,4 +1,14 @@
 [[redirects]]
+  from = "/Task1_2/*"
+  to = "/Task1_2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[build]
+publish = ""
+command = ""
