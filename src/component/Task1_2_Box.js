@@ -21,7 +21,7 @@ const Box = (props) => {
     else if(props.title === "you") {
       setBoxResult(props.result);
     }
-  },[props.result])
+  },[props.title, props.result])
 
   return (
     <div className={`boxWrap ${boxResult}`}>
