@@ -24,20 +24,22 @@ const Box = (props) => {
   },[props.result])
 
   return (
-    <div className={`box ${boxResult}`}>
-      <div className="itemImageBox">
-        <p className="itemimage">
-          <img
-            src={props.item ? props.item.image : "https://img.freepik.com/premium-photo/question-mark-sign-3d-question-mark_118019-6308.jpg"}
-            alt={props.item && props.item.name}
-          />
+    <div className={`boxWrap ${boxResult}`}>
+      <div className="box">
+        <div className="itemImageBox">
+          <p className="itemimage">
+            <img
+              src={props.item ? props.item.image : "https://img.freepik.com/premium-photo/question-mark-sign-3d-question-mark_118019-6308.jpg"}
+              alt={props.item && props.item.name}
+            />
+          </p>
+        </div>
+        <p className="gamerImage">
+          <img src={props.image} alt={props.title} />
+          <h2>{boxResult}</h2>
         </p>
       </div>
-      <p className="gamerImage">
-        <img src={props.image} alt={props.title} />
-        <h2>{boxResult}</h2>
-      </p>
-      <h1>- {props.title} -</h1>
+      <h1 className="gamerText">- {props.title} -</h1>
     </div>
   )
 }
